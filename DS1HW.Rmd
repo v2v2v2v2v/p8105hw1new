@@ -33,4 +33,14 @@ gen=as.factor(g)
 gen
 dfhw = data.frame(q2, d, char_vec, gen)
 dfhw
+library(tidyverse)
+mean(pull(dfhw, q2))
+mean(pull(dfhw, d))
+mean(pull(dfhw, char_vec))
+mean(pull(dfhw, gen))
+#The factor and character vector used here do not give a mean.
+#However, q2 (random normal sample vector) and d (logical vector) do give a mean
+cd = as.numeric(d)
+cchar = as.numeric(char_vec)
+cgen = as.numeric(gen)
 ```
