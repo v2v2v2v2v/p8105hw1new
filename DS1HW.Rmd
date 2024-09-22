@@ -44,3 +44,8 @@ cd = as.numeric(d)
 cchar = as.numeric(char_vec)
 cgen = as.numeric(gen)
 ```
+
+The logical vector changes to 0 and 1 (0 for false and 1 for true) which is the reasoning for
+the mean obtained. The factor vector can be changed to numeric but on it's own it doesn't give
+a mean. The character vector cannot be assigned numbers in a universal way and hence do not
+give a mean. q2 is a vector made up of numbers and hence a mean is generated.
