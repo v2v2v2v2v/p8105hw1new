@@ -1,0 +1,18 @@
+---
+title: "DS1HW"
+output: html_document
+date: "2024-09-22"
+---
+
+```{R}
+library(palmerpenguins)
+data("penguins", package = "palmerpenguins")
+penguins
+plot(penguins$bill_length_mm,penguins$flipper_length_mm)
+library(ggplot2)
+ggplot(penguins, aes(x=bill_length_mm, 
+y = flipper_length_mm, color=species)) + geom_point()
+summary(penguins)
+nrow(penguins)
+ncol(penguins)
+```
