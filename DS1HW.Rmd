@@ -16,3 +16,6 @@ summary(penguins)
 nrow(penguins)
 ncol(penguins)
 ```
+Short description: species, sex and island are factors, bill_length_mm and bill_depth_mm are
+doubles while flipper_length_mm, body_mass_g, year are integers.
+The dataset penguins has 344 rows and 8 columns i.e. 344x8 size. The mean flipper length is 200.9
