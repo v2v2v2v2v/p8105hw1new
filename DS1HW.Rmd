@@ -12,10 +12,25 @@ plot(penguins$bill_length_mm,penguins$flipper_length_mm)
 library(ggplot2)
 ggplot(penguins, aes(x=bill_length_mm, 
 y = flipper_length_mm, color=species)) + geom_point()
+ggsave("penguin.pdf")
 summary(penguins)
 nrow(penguins)
 ncol(penguins)
 ```
+
 Short description: species, sex and island are factors, bill_length_mm and bill_depth_mm are
 doubles while flipper_length_mm, body_mass_g, year are integers.
 The dataset penguins has 344 rows and 8 columns i.e. 344x8 size. The mean flipper length is 200.9
+
+```{R}
+q2 = rnorm(10)
+d = q2>0
+d
+char_vec = c("H","H","H","H","H","H","H","H","H","H")
+length(char_vec)
+g=c("M", "M", "M", "M", "T", "F", "F", "F", "F", "F")
+gen=as.factor(g)
+gen
+dfhw = data.frame(q2, d, char_vec, gen)
+dfhw
+```
